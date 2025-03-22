@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 001/004</title>
+</head>
+<body>
+
+    <hr>
+
+    <h1>Somando variáveis!</h1>
+
+    <h3>Converter string para número:</h3>
+    <ul>
+        <li>
+            <p>Number.parseInt(valor)</p>
+        </li>
+        <li>
+            <p>Number.parseFloat(valor)</p>
+        </li>
+        <li>
+            <p>Number(valor)</p>
+        </li>
+    </ul>
+
+    <h3>Converter de número para string</h3>
+    <ul>
+        <li>
+            <p>String(valor)</p>
+        </li>
+        <li>
+            <p>valor.toString()</p>
+        </li>
+    </ul>
+
+    <!-- <script>
+        var numero1 = Number(window.prompt('Digite o primeiro número'))
+        var numero2 = Number(window.prompt('Digite o segundo número'))
+        window.alert(`A soma de ${numero1} + ${numero2} é igual a ${numero1 + numero2}`)
+    </script> -->
+
+    <hr>
+
+    <h2>Formatação de strings</h2>
+    <h3>Utilizando template strings</h3>
+    <script>
+        var nome = window.prompt('Digite o seu nome')
+
+        document.write(`<p>Olá, ${nome}. Seja bem-vindo</p>`)
+        document.write(`<p>Seu nome tem ${nome.length} letras</p>`)
+        document.write(`<p>Seu nome em letras maiúsculas fica: ${nome.toUpperCase()}`)
+        document.write(`<p>Seu nome em letras minúsculas fica: ${nome.toLowerCase()}`)
+    </script>
+
+    <hr>
+
+    <h2>Formatação de números</h2>
+    <h3>Utilizando toFixed()</h3>
+    <script>
+        var valor = Number(window.prompt('Digite o valor para converter em 2 casas decimais'))
+        document.write(`<p>Valor antes da formatação: ${valor}</p>`)
+        var valor_form = valor.toFixed(2)
+        document.write(`<p>Valor depois da formatação: ${valor_form}</p>`)
+    </script>
+
+    <h3>Utilizando replace</h3>
+    <script>
+        var valor = Number(window.prompt('Digite o valor para trocar o ponto pela virgula'))
+        document.write(`<p>Valor antes da formatação: ${valor}</p>`)
+        var valor_form = valor.toFixed(2).replace('.',',')
+        document.write(`<p>Valor depois da formatação: ${valor_form}</p>`)
+    </script>
+
+    <h3>Utilizando localização de strings</h3>
+    <script>
+        var valor = Number(window.prompt('Digite o valor pra ser formatado em moeda'))
+        document.write(`<p>Valor antes da formatação: ${valor}</p>`)
+        valor_BRL = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        valor_USD = valor.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
+        valor_EUR = valor.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
+        document.write(`<p>Valor depois da formatação: ${valor_BRL}</p>`)
+        document.write(`<p>Valor depois da formatação: ${valor_USD}</p>`)
+        document.write(`<p>Valor depois da formatação: ${valor_EUR}</p>`)
+    </script>
+
+    <hr>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicios 005-</title>
+    <style>
+      body {
+        background-color: rgb(44, 89, 116);
+        font: normal 15pt Arial;
+      }
+
+      #eventos {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando a compreensão do DOM</h1>
+
+    <h2>Seletores JavaScript</h2>
+
+    <p name="resultado">Resultado aqui</p>
+
+    <p class="DOM">Aprendendo a usar o <span>DOM</span></p>
+
+    <div id="clique">CLIQUE AQUI</div>
+
+    <p id="copia">Cópia da outra</p>
+
+    <script>
+
+      var div = window.document.getElementById("clique")
+      div.style.background = 'blue'
+
+      var primeirop = window.document.getElementsByName('resultado')[0]
+      primeirop.style.color = 'red'
+
+      var segundop = window.document.getElementsByClassName('DOM')[0]
+      segundop.style.color = 'salmon'
+
+      var seletor = window.document.querySelector('p span')
+      seletor.style.color = 'white'
+
+      var copiar = window.document.getElementById('copia')
+      copiar.innerHTML += segundop.innerHTML
+
+    </script>
+
+    <hr>
+
+
+    <h2>Eventos JavaScript</h2>
+
+    <div id="eventos" onclick="clicar()" onmouseout="mousesair()" onmouseenter="mouseentrar()" onmousemove="mousemove()">Teste</div>
+
+    <script>
+
+      var div_teste = window.document.querySelector('#eventos')
+
+      function clicar() {
+        div_teste.innerText = 'Mudou o texto!'
+      }
+
+      function mousesair() {
+        div_teste.innerText = 'Teste'
+        div_teste.style.background = 'brown'
+      }
+
+      function mouseentrar() {
+        div_teste.style.background = 'green'
+      }
+
+      function mousemove() {
+        div_teste.style.color = 'white'
+      }
+
+    </script>
+
+  </body>
+</html>
