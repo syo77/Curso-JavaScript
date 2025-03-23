@@ -18,7 +18,7 @@ rl.question('Digite uma lista de números (separados por espaço): ', (lst) => {
     }
     let media = soma / lista.length
 
-    console.log(`Os números fornecidos foram: ${lista}`)
+    console.log(`Os números fornecidos foram: ${lista.join(", ")}`)
     console.log(`A média entre eles é igual a: ${media}`)
 
     rl.close()
