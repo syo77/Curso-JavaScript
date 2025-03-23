@@ -15,7 +15,7 @@ rl.question('Digite os elementos da matriz 1: ', (mtz1) => {
     console.log(matriz1)
 
     rl.question('Digite os elementos da matriz 2: ', (mtz2) => {
-        
+
         let matriz2 = mtz2.split(" ")
         console.log(matriz2)
 
