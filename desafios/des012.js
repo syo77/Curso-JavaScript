@@ -10,7 +10,7 @@ const rl = lerlinha.createInterface({
 })
 
 rl.question('Digite uma lista de números (separados por espaço): ', (lst) => {
-    
+ 
     let lista = lst.split(" ")
     let soma = 0
     for (let i = 0; i < lista.length; i++) {
