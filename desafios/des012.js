@@ -9,12 +9,12 @@ const rl = lerlinha.createInterface({
     output: process.stdout
 })
 
-let numeros = []; // Array para armazenar os números fornecidos
+let numeros = [];
 
 function perguntarNumero() {
     rl.question('Digite um número (ou pressione Enter para finalizar): ', (input) => {
         if (input === '') {
-            // Calcula a média
+
             let soma = 0;
             for (let i = 0; i < numeros.length; i++) {
                 soma += numeros[i];
@@ -23,10 +23,10 @@ function perguntarNumero() {
             console.log(`A média dos números é: ${media}`);
             rl.close();
         } else {
-            numeros.push(parseFloat(input)); // Adiciona o número ao array
-            perguntarNumero(); // Chama a função novamente para continuar pedindo números
+            numeros.push(parseFloat(input));
+            perguntarNumero();
         }
     });
 }
 
-perguntarNumero(); // Inicia o processo
+perguntarNumero();
