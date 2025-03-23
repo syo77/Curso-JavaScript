@@ -33,7 +33,3 @@ rl.question('Digite os elementos da matriz 1: ', (mtz1) => {
     })
 
 })
-
-
-
-
