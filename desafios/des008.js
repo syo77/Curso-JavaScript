@@ -11,11 +11,11 @@ const rl = lerlinha.createInterface({
 
 rl.question('Digite um número: ', (num) => {   
 
-    var numero = Number(num)
-    var soma = 0
-    var string_soma = `A soma é:`
+    let numero = Number(num)
+    let soma = 0
+    let string_soma = `A soma é:`
 
-    for (var i = 1; i <= numero; i++) {
+    for (let i = 1; i <= numero; i++) {
         if (i % 2 !== 0) {
             soma += i
             if (i === 1) {

@@ -6,8 +6,8 @@ const rl = lerlinha.createInterface({
 })
 
 rl.question('Digite o número: ', (numero) => {
-    var num = numero
-    var parimpar = ''
+    let num = numero
+    let parimpar = ''
 
     if (num % 2 === 0) {
         parimpar = 'par'

@@ -12,7 +12,7 @@ const rl = lerlinha.createInterface({
 
 rl.question('Digite um número em graus celsius: ', (celsius) => {   
 
-    var fahrenheit = (Number(celsius) * (9/5)) + 32
+    let fahrenheit = (Number(celsius) * (9/5)) + 32
 
     console.log(`Resposta: ${celsius}° Celsius são aproximadamente ${fahrenheit}° Fahrenheit`)
 

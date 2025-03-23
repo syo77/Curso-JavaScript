@@ -9,24 +9,18 @@ const rl = lerlinha.createInterface({
     output: process.stdout
 })
 
-let numeros = [];
+rl.question('Digite uma lista de números (separados por espaço): ', (lst) => {
+    
+    let lista = lst.split(" ")
+    let soma = 0
+    for (let i = 0; i < lista.length; i++) {
+        soma += Number(lista[i])
+    }
+    let media = soma / lista.length
 
-function perguntarNumero() {
-    rl.question('Digite um número (ou pressione Enter para finalizar): ', (input) => {
-        if (input === '') {
+    console.log(`Os números fornecidos foram: ${lista}`)
+    console.log(`A média entre eles é igual a: ${media}`)
 
-            let soma = 0;
-            for (let i = 0; i < numeros.length; i++) {
-                soma += numeros[i];
-            }
-            const media = soma / numeros.length;
-            console.log(`A média dos números é: ${media}`);
-            rl.close();
-        } else {
-            numeros.push(parseFloat(input));
-            perguntarNumero();
-        }
-    });
-}
+    rl.close()
 
-perguntarNumero();
+});

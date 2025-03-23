@@ -7,9 +7,9 @@ const rl = lerlinha.createInterface({
 
 rl.question('Digite o número para fatorial: ', (fat) => {
 
-    var fatorial = Number(fat)
+    let fatorial = Number(fat)
 
-    for (var i = fat-1; i > 1; i--) {
+    for (let i = fat-1; i > 1; i--) {
         fatorial *= i
     }
 

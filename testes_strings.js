@@ -7,13 +7,13 @@ const rl = lerlinha.createInterface({
 
 rl.question('Digite uma palavra: ', (plv) => {
 
-    var palavra = plv
+    let palavra = plv
     console.log(`Palavra: ${palavra}`)
-    var plv_split = palavra.split("")
+    let plv_split = palavra.split("")
     console.log(`Palavra separada em array: ${plv_split}`)
-    var plv_invertida = plv_split.reverse()
+    let plv_invertida = plv_split.reverse()
     console.log(`Palavra invertida: ${plv_invertida}`)
-    var plv_juntada = plv_invertida.join("")
+    let plv_juntada = plv_invertida.join("")
     console.log(`Palavra juntada novamente: ${plv_juntada}`)    
 
     rl.close()

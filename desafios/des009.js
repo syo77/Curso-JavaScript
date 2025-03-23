@@ -11,7 +11,7 @@ const rl = lerlinha.createInterface({
 
 rl.question('Digite um número para a sequência de fibonacci: ', (num) => {   
 
-    var numero = num
+    let numero = num
     let elm1 = 0
     let elm2 = 1
     let temp

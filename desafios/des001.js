@@ -7,11 +7,11 @@ const rl = readline.createInterface({
 
 rl.question('Digite o primeiro número: ', (numero1) => {
 
-    var num1 = Number(numero1)
+    let num1 = Number(numero1)
 
     rl.question('Digite o segundo número: ', (numero2) => {
 
-        var num2 = Number(numero2)
+        let num2 = Number(numero2)
         soma = num1 + num2
 
         console.log(`\nO primeiro número é: ${num1}\n`)

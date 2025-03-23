@@ -7,7 +7,7 @@ const rl = lerlinha.createInterface({
 
 rl.question('Digite a sua mensagem: ', (msg) => {   
 
-    var mensagem = msg.split(" ")
+    let mensagem = msg.split(" ")
     console.log(`Na sua mensagem, a quantidade de palavras digitadas é igual a: " ${mensagem.length} "`)
 
     rl.close()

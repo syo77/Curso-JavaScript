@@ -11,8 +11,8 @@ const rl = lerlinha.createInterface({
 
 rl.question('Digite uma palavra: ', (plv) => {
 
-    var palavra = plv
-    var plv_invertida = palavra.split("").reverse().join("")
+    let palavra = plv
+    let plv_invertida = palavra.split("").reverse().join("")
 
     if (palavra === plv_invertida) {
         console.log(`A palavra "${palavra}" é um palíndromo!`)

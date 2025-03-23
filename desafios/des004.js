@@ -6,10 +6,10 @@ const rl = lerlinha.createInterface({
 })
 
 rl.question('Digite a palavra desejada: ', (plv) => {
-    var palavra = plv
-    var qtd_vogais = 0
+    let palavra = plv
+    let qtd_vogais = 0
 
-    for (var i = 0; i < palavra.length; i++) {
+    for (let i = 0; i < palavra.length; i++) {
         if ('aeiouAEIOU'.includes(palavra[i])) {
             qtd_vogais += 1
         }
